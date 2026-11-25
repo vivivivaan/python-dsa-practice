@@ -40,6 +40,6 @@ class TestLinkedListCoreMethods:
         sample_linked_list.print_list_by_idx()
         out: str = capsys.readouterr().out
         assert "The Linkedlist with indices is:" in out
-        assert "Index [0] => 0" in out
-        assert "Index [6] => 60" in out
+        assert "[0] => 0" in out
+        assert "[6] => 60" in out
         assert "Length: 7 | Head: 0 | Tail: 60" in out

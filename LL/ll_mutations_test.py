@@ -41,6 +41,6 @@ class TestLinkedListMutationMethods:
         sample_linked_list.reverse()
         out: str = capsys.readouterr().out
         assert "The Linkedlist with indices is:" in out
-        assert "Index [0] => 50" in out
-        assert "Index [4] => 10" in out
+        assert "[0] => 50" in out
+        assert "[4] => 10" in out
         assert "Length: 5 | Head: 50 | Tail: 10\n" in out

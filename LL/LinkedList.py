@@ -44,13 +44,18 @@ class LinkedList:
 
     def print_list(self) -> None:
         print("The Linkedlist is:")
+        if self.head is None:
+            print("LinkedList is empty")
+            return
+
         temp: Node | None = self.head
         while temp is not None:
             print(f"{temp.data}")
-            temp = temp.next
             if temp.next == self.head:
                 print(f"{temp.next.data} (loop!)")
                 break
+            temp = temp.next
+
         print(
             f"Length: {self.get_length()} | Head: {self.get_head().data} | Tail: {self.get_tail().data}\n"
         )
