@@ -40,7 +40,7 @@ ll.create_cycle()
 ll.print_list_by_idx()
 
 # print("The linked list after creating cycle: ")
-# # ll.create_loop()
+# # ll.create_cycle()
 # if ll.has_loop():
 #     print("The linked list has a loop...")
 #     sys.exit()
