@@ -33,11 +33,12 @@ class LinkedList:
                 return temp
         return temp
 
-    # Simpler version
+    # Create simple cycle
     def create_cycle(self) -> None:
         tail: Node | None = self.get_tail()
         tail.next = self.head
 
+    # Delete simple cycle
     def delete_test_cycle(self) -> None:
         tail: Node | None = self.get_tail()
         tail.next = None
@@ -120,6 +121,7 @@ class LinkedList:
             self.head = None
             self.modify_length(offset=-1)
             return temp
+
         temp: Node | None = self.head
         self.head = self.head.next
         temp.next = None

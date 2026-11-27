@@ -10,34 +10,48 @@ for i in range(2, 11):
 
 ll.print_list_by_idx()
 
-print(f"Getting node at 4th index: {ll.get(4).data}\n")
-print("Updating the node at 4th index..")
-if ll.set_(4, 2000):
-    print(
-        "The updated linked list after successfully updating node at the 4th index is:"
-    )
-    ll.print_list_by_idx()
-else:
-    print("The node at the 4th index could not be updated.\n")
+ll.create_cycle()
 
-print("Inserting the node at the 4th index..")
-ll.insert(4, 550)
-print("The linked list after successful node insertion at the 4th index is..")
-ll.print_list_by_idx()
-
-print("The linked list reversed is: ")
-ll.reverse()
-
-print(f"The mid node in the reversed linked list is: {ll.find_mid().data}\n")
 print("Time to pop the heads!\n")
-for head in range(3):
-    print(f"Popping the element {head}: ", ll.pop_head().data)
+for head in range(2):
+    print(f"[{head}]: ", ll.pop_head().data)
 
 print()
+
 ll.print_list_by_idx()
 
-ll.create_cycle()
-ll.print_list_by_idx()
+# print(f"Getting node at 4th index: {ll.get(4).data}\n")
+# print("Updating the node at 4th index..")
+# if ll.set_(4, 2000):
+#     print(
+#         "The updated linked list after successfully updating node at the 4th index is:"
+#     )
+#     ll.print_list_by_idx()
+# else:
+#     print("The node at the 4th index could not be updated.\n")
+
+# print("Inserting the node at the 4th index..")
+# ll.insert(4, 550)
+# print("The linked list after successful node insertion at the 4th index is..")
+# ll.print_list_by_idx()
+
+# print("The linked list reversed is: ")
+# ll.reverse()
+
+# print(f"The mid node in the reversed linked list is: {ll.find_mid().data}\n")
+
+# print("Time to pop the heads!\n")
+# for head in range(2):
+#     print(f"Popping the element {head}: ", ll.pop_head().data)
+
+# print()
+
+
+# print("Time to pop the tails!\n")
+# for head in range(2):
+#     print(f"Popping the element {head}: ", ll.pop_tail().data)
+
+# ll.print_list_by_idx()
 
 # print("The linked list after creating cycle: ")
 # # ll.create_cycle()
